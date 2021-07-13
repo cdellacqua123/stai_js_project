@@ -1,3 +1,4 @@
+import smaX from './sma.js';
 // export function chartData(data) {
 //     let create = {
 //             chart: {
@@ -22,7 +23,7 @@
 //     }
 //     return create;
 // }
-import smaX from './sma.js';
+
 export function chartData(data) {
     let create = {
         series: [{
@@ -62,8 +63,10 @@ export function chartData(data) {
             y: [open, high, low, close]
         }
         create.series[1].data.push(dataObj);
-        create.series[0].data.push({ x: (`${mth}-${day}-${yr}`), y: 130});
     }
-    
+    let smaObj = smaX(data, 10)
+    smaObj.forEach(obj => 
+        create.series[0].data.push(obj)
+    );
     return create;
 }
