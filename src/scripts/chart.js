@@ -45,7 +45,7 @@ export function chartData(data) {
             align: 'left'
         },
         stroke: {
-            width: [3, 1]
+            width: [4, 1]
         },
         
     };
@@ -64,7 +64,7 @@ export function chartData(data) {
         }
         create.series[1].data.push(dataObj);
     }
-    let smaObj = smaX(data, 10)
+    let smaObj = smaX(data, 20)
     smaObj.forEach(obj => 
         create.series[0].data.push(obj)
     );
