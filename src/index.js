@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let ticker = 'AAPL';
     async function printing() {
         let data = await getData(axios, ticker);
-        console.log(data);
         let candle = chartData(data);
         // let sma = smaX(data, 100);
         let chartView = new ApexCharts(document.querySelector("#chart"), candle);
