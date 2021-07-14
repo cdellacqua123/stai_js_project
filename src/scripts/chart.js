@@ -44,6 +44,7 @@ export function chartData(data, smaNum, ticker) {
             text: ticker,
             align: 'left'
         },
+
         stroke: {
             width: [4, 1]
         },

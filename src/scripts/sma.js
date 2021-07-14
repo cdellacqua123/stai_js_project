@@ -21,8 +21,6 @@ export default function smaX(data, numDays) {
             }
             sma.push(dataObj);
         }
-        console.log(sma);
-
     }
     return sma;
 }

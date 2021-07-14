@@ -41,12 +41,17 @@ export default async function getData(axios, ticker) {
     let response = await pull;
     let table = await response.data['Time Series (Daily)'];
     for (let date in table) {
+        let open = parseFloat(table[date]['1. open']);
+        let high = parseFloat(table[date]['2. high']);
+        let low = parseFloat(table[date]['3. low']);
+        let close = parseFloat(table[date]['4. close']);
+        let adjClose = parseFloat(table[date]['5. adjusted close']);
         arg['date'].push(date);
-        arg['open'].push(table[date]['1. open']);
-        arg['high'].push(table[date]['2. high']);
-        arg['low'].push(table[date]['3. low']);
-        arg['close'].push(table[date]['4. close']);
-        arg['adjClose'].push(table[date]['5. adjusted close']);
+        arg['open'].push(open.toFixed(2));
+        arg['high'].push(high.toFixed(2));
+        arg['low'].push(low.toFixed(2));
+        arg['close'].push(close.toFixed(2));
+        arg['adjClose'].push(adjClose.toFixed(2));
         arg['vol'].push(table[date]['6. volume']);
         };
     return arg;
