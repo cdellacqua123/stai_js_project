@@ -1,5 +1,6 @@
 export default function smaX(data, numDays) {
     let sma = [];
+    
     for (let i = 0; i < data['date'].length; i++) {
         let yr = data['date'][i].split('-')[0];
         let mth = data['date'][i].split('-')[1];

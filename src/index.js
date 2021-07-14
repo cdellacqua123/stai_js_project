@@ -7,18 +7,20 @@ import getData from './data.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     let btn = document.getElementById('submit');
-    btn.addEventListener('click', (e) => { printing(document.getElementById('ticker').value) });
+    btn.addEventListener('click', (e) => { 
+        printing(document.getElementById('ticker').value) });
     printing();
 });
 
 
 
-async function printing(ticker = 'AAPL') {
-    console.log(ticker);
-    let smaNum = 10;
+async function printing(ticker = 'AAPL', smaNum = 20) {
+    let smaCheck = parseInt(document.getElementById('sma').value)
+    if ((smaCheck !== 20) && (smaCheck)) smaNum = smaCheck;
+    console.log(smaNum);
     let data = await getData(axios, ticker);
-    console.log(data);
     let candle = chartData(data, smaNum);
+    console.log(candle);
     let check = document.querySelector("#chart");
     let chartView = {};
     if (check.childNodes.length) {
