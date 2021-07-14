@@ -19,7 +19,7 @@ async function printing(ticker = 'AAPL', smaNum = 20) {
     if ((smaCheck !== 20) && (smaCheck)) smaNum = smaCheck;
     console.log(smaNum);
     let data = await getData(axios, ticker);
-    let candle = chartData(data, smaNum);
+    let candle = chartData(data, smaNum, ticker);
     console.log(candle);
     let check = document.querySelector("#chart");
     let chartView = {};

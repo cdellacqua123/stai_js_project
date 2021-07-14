@@ -24,7 +24,7 @@ import smaX from './sma.js';
 //     return create;
 // }
 
-export function chartData(data, smaNum) {
+export function chartData(data, smaNum, ticker) {
     let create = {
         series: [{
             name: 'sma',
@@ -41,7 +41,7 @@ export function chartData(data, smaNum) {
             type: 'line',
         },
         title: {
-            text: 'STAI',
+            text: ticker,
             align: 'left'
         },
         stroke: {

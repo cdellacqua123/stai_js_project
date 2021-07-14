@@ -58,3 +58,13 @@ table {
 body {
   background-color: rgb(109, 107, 107);
 }
+
+.button {
+  width: 50px;
+  height: 25px;
+}
+
+.button:hover {
+  /* box-shadow: 0 8px 16px 0 yellow, 0 6px 20px 0 yellow; */
+  background-color: yellow;
+}
