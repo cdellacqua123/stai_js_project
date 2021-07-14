@@ -41,7 +41,7 @@ export function chartData(data, smaNum) {
             type: 'line',
         },
         title: {
-            text: 'CandleStick Chart',
+            text: 'STAI',
             align: 'left'
         },
         stroke: {
