@@ -57,7 +57,7 @@ export function chartData(data, smaNum, ticker) {
         }
         
     };
-    // for (let i = 0; i < data['date'].length - 1; i++) {
+    
     for (let i = data['date'].length - 1; i >= 0; i--) {
         let dateCurr = data['date'][i].split('-');
         let yr = dateCurr[0];
@@ -72,10 +72,7 @@ export function chartData(data, smaNum, ticker) {
             y: [open, high, low, close]
         }
         create.series[1].data.push(dataObj);
-        // create.series[0].data.push({
-        //     x: (`${mth}-${day}-${yr}`),
-        //     y: 135
-        // });
+
     }
     let smaObj = smaX(data, smaNum)
     for (let i = smaObj.length - 1; i >= 0; i--) {
