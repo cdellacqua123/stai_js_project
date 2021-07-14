@@ -26,9 +26,3 @@ export default function smaX(data, numDays) {
     }
     return sma;
 }
-
-// for (let i = data['date'].length - 1; i >= 0; i--) {
-
-// for (let y = i; y > i - numDays; y--) {
-
-// 

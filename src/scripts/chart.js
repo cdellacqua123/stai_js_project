@@ -37,7 +37,7 @@ export function chartData(data, smaNum, ticker) {
 
         }],
         chart: {
-            height: 500,
+            height: 600,
             type: 'line',
         },
         title: {
@@ -47,6 +47,14 @@ export function chartData(data, smaNum, ticker) {
         stroke: {
             width: [4, 1]
         },
+        grid: {
+            // row: {
+            //     colors: ['#F44336', '#E91E63', '#9C27B0']
+            // },
+            column: {
+                colors: ['#000']
+            }
+        }
         
     };
     // for (let i = 0; i < data['date'].length - 1; i++) {
