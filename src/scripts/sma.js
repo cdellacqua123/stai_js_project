@@ -23,7 +23,6 @@ export default function smaX(data, numDays) {
         }
 
     }
-    console.log(sma)
     return sma;
 }
 
