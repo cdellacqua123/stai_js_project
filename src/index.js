@@ -22,7 +22,6 @@ async function printing(ticker = 'AAPL') {
     console.log(data);
     let candle = chartData(data, smaNum);
     debugger;
-    
     let chartView = new ApexCharts(document.querySelector("#chart"), candle);
     chartView.render();
 };
