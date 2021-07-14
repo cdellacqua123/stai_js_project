@@ -7,7 +7,7 @@ import getData from './data.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     let ticker = 'AAPL';
-    let smaNum = 10
+    let smaNum = 20
     async function printing() {
         let data = await getData(axios, ticker);
         let candle = chartData(data, smaNum);

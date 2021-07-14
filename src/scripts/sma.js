@@ -1,12 +1,11 @@
 export default function smaX(data, numDays) {
     let sma = [];
-    for (let i = 0; i < data['date'].length - 1; i++) {
+    for (let i = 0; i < data['date'].length; i++) {
         let yr = data['date'][i].split('-')[0];
         let mth = data['date'][i].split('-')[1];
         let day = data['date'][i].split('-')[2];
         let sum = 0;
-        // debugger
-        if ((i + numDays) > data['date'].length - 1) {
+        if ((i + numDays) > data['date'].length) {
             let dataObj = {
                 x: (`${mth}-${day}-${yr}`),
                 y: null
