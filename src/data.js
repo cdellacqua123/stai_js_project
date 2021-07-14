@@ -31,7 +31,6 @@ export default async function getData(axios, ticker) {
             console.log('Status:', res.status);
         } else {
             // data is successfully parsed as a JSON object:
-            console.log("else");
             return res;
         }
     });

@@ -10,7 +10,6 @@ export default function smaX(data, numDays) {
                 x: (`${mth}-${day}-${yr}`),
                 y: null
             };
-            console.log('help')
             sma.push(dataObj);
         } else {
             for (let y = i; y < i + numDays; y++) {
