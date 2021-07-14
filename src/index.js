@@ -6,14 +6,12 @@ import getData from './data.js';
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    // debugger;
     let btn = document.getElementById('submit');
     btn.addEventListener('click', (e) => { printing(document.getElementById('ticker').value) });
-
-    // console.log(test);
-    
     printing();
 });
+
+
 
 async function printing(ticker = 'AAPL') {
     console.log(ticker);
@@ -21,8 +19,14 @@ async function printing(ticker = 'AAPL') {
     let data = await getData(axios, ticker);
     console.log(data);
     let candle = chartData(data, smaNum);
-    debugger;
-    let chartView = new ApexCharts(document.querySelector("#chart"), candle);
+    let check = document.querySelector("#chart");
+    let chartView = {};
+    if (check.childNodes.length) {
+        check.removeChild(check.firstChild);
+        chartView = new ApexCharts(document.querySelector("#chart"), candle);
+    } else {
+        chartView = new ApexCharts(document.querySelector("#chart"), candle);
+    }
     chartView.render();
 };
 
