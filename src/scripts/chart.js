@@ -24,7 +24,7 @@ import smaX from './sma.js';
 //     return create;
 // }
 
-export function chartData(data) {
+export function chartData(data, smaNum) {
     let create = {
         series: [{
             name: 'sma',
@@ -37,7 +37,7 @@ export function chartData(data) {
 
         }],
         chart: {
-            height: 350,
+            height: 500,
             type: 'line',
         },
         title: {
@@ -69,7 +69,7 @@ export function chartData(data) {
         //     y: 135
         // });
     }
-    let smaObj = smaX(data, 20)
+    let smaObj = smaX(data, smaNum)
     for (let i = smaObj.length - 1; i >= 0; i--) {
         create.series[0].data.push(smaObj[i])
     };
