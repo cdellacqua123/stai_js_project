@@ -56,7 +56,8 @@ table {
 }
 
 body {
-  background-color: rgb(175, 173, 173);
+  background-image: linear-gradient(to bottom right, rgb(114, 113, 113), rgb(192, 191, 191));
+  /* background-color: rgb(175, 173, 173); */
 }
 
 .button {
