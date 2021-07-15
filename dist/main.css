@@ -63,6 +63,8 @@ body {
   width: 50px;
   height: 25px;
   border-radius: 10px;
+  background-color: rgba(94, 91, 91, 255);
+  color: whitesmoke;
 }
 
 .button:hover {
@@ -93,4 +95,8 @@ p {
   position: absolute;
   bottom: 2px;
   left: 2px;
+}
+
+.rocket {
+  opacity: 100;
 }
