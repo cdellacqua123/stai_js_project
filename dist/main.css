@@ -99,4 +99,7 @@ p {
 
 .rocket {
   opacity: 100;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
 }
