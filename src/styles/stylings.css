@@ -36,7 +36,7 @@ h2 {
     text-align: center;
     font-size: 20px;
     float: initial;
-
+    margin-top: 5px;
 }
 
 div {
@@ -54,20 +54,31 @@ div {
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
+
+#first-par{
+    margin-top: 10px;
+}
+
+p ~ p {
+    margin-top: 10px;
+}
+
 
 .what {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    line-height: 20px; 
+    text-indent: 30px;
+    text-align: justify;
 }
 
 .form-img {
-    margin-top: 15px;
+    margin-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
