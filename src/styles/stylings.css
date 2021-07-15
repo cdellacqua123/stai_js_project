@@ -65,7 +65,10 @@ h3 {
 p ~ p {
     margin-top: 10px;
 }
-
+.inputs {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
 
 .what {
     font-family: Arial, Helvetica, sans-serif;
