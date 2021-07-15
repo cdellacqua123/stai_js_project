@@ -55,7 +55,14 @@ table {
   border-spacing: 0;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
+  height: 100%;
+  width: 100%;
   background-image: linear-gradient(to bottom right, rgb(114, 113, 113), rgb(192, 191, 191));
 }
 
@@ -101,10 +108,40 @@ div {
 }
 
 /* SvgjsText12844 */
-.testing {
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.what {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-img {
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-txt {
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.back-to-main {
   position: absolute;
-  bottom: 2px;
-  left: 2px;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 .rocket {
