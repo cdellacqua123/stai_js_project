@@ -57,4 +57,4 @@ lines, changing the amount of days being used to calculate an indicator, etc..
 - [x] Monday: Apply stock information from Alpha Vantage to Apex Charts; possibly start one or two of the indaicator's formulas
 - [x] Tuesday: Work on formulas of indicators  & applying them to charts
 - [x] Wednesday: Finish up any indicators; work on styling whole website
-- [ ] Thursday morning: Any last minute touches/tests before presentation
+- [x] Thursday morning: Any last minute touches/tests before presentation
