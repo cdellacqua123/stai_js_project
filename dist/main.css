@@ -152,18 +152,23 @@ p ~ p {
   text-align: center;
 }
 
-.back-to-main {
+/* .back-to-main {
   position: absolute;
   left: 50%;
   bottom: 20px;
   transform: translate(-50%, -50%);
   margin: 0 auto;
+} */
+
+
+.about-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.rocket {
-  opacity: 100;
-  position: fixed;
-  /* bottom: 1px; */
-  right: 0;
-  bottom: 0;
+.back-to-main {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
 }
