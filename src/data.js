@@ -22,7 +22,7 @@
 
 
 export default async function getData(axios, ticker) {
-    const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${ticker}&apikey=QYD67QW2GZO16DQF`;
+    const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker}&apikey=QYD67QW2GZO16DQF`;
     let pull = axios.get(url) 
         .then((res) => {
         if (!res) {
@@ -40,7 +40,9 @@ export default async function getData(axios, ticker) {
     };
     let response = await pull;
     let table = await response.data['Time Series (Daily)'];
+    console.log(response)
     for (let date in table) {
+        
         let open = parseFloat(table[date]['1. open']);
         let high = parseFloat(table[date]['2. high']);
         let low = parseFloat(table[date]['3. low']);

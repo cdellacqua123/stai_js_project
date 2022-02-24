@@ -1,101 +1,137 @@
-html{
-    min-height: 100%;
-    position:relative;
+html {
+  min-height: 100%;
+  position: relative;
 }
+
 body {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to bottom right, rgb(110, 110, 110), rgb(206, 205, 205));
-    
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgb(110, 110, 110), rgb(206, 205, 205));
 }
+
 .button {
-    width: 50px;
-    height: 25px;
-    border-radius: 10px;
-    background-color: rgba(94,91,91,255);
-    color: whitesmoke;
+  width: 50px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: rgba(94, 91, 91, 255);
+  color: whitesmoke;
 }
-.button:hover{
-    
-    background-color: rgba(44,172,74,255);
-    color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: white;
+
+.button:hover {
+  background-color: rgba(44, 172, 74, 255);
+  color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: white;
 }
 
 h1 {
-    
-    text-align: center;
-    font-size: 60px;
-    font-style: underline;
-    float: initial;
-
+  text-align: center;
+  font-size: 60px;
+  font-style: underline;
+  float: initial;
 }
+
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 20px;
-    float: initial;
-    margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  float: initial;
+  margin-top: 10px;
 }
 
 div {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 #chart {
-    /* margin-top: 20px; */
-    /* border-color: black;
-    border-style: solid; */
-    /* border: 1px solid black */
-    margin-right: 30px;
+  /* margin-top: 20px; */
+  /* border-color: black;
+  border-style: solid; */
+  /* border: 1px solid black */
+  margin-right: 30px;
 }
+
 /* SvgjsText12844 */
-
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin-top: 20px;
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
-#first-par{
-    margin-top: 10px;
+#first-par {
+  margin-top: 10px;
 }
 
 p ~ p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
+
 .inputs {
-    margin-left: 10px;
-    margin-bottom: 5px;
+  margin-left: 40px;
+  margin-bottom: 5px;
 }
 
 .what {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 20px; 
-    text-indent: 30px;
-    text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 20px;
+  text-indent: 30px;
+  text-align: justify;
 }
 
 .form-img {
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-txt {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* .back-to-main {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+} */
+
+
+.about-container {
+    width: 100%;
+    text-align: center;
     margin-top: 10px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.back-to-main {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.linky-link {
+  text-decoration: none;
+}
+
+.link-pic-container {
     text-align: center;
 }
 
-
-
-
-
-
+.link-pic {
+  max-width: 30px;
+  max-height: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}

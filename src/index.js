@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
 async function printing(ticker = 'AAPL', smaNum = 20) {
     let smaCheck = parseInt(document.getElementById('sma').value)
     if ((smaCheck !== 20) && (smaCheck)) smaNum = smaCheck;
-    console.log(smaNum);
+    
     let data = await getData(axios, ticker);
     let candle = chartData(data, smaNum, ticker);
-    console.log(candle);
+    
     let check = document.querySelector("#chart");
     let chartView = {};
     if (check.childNodes.length) {
