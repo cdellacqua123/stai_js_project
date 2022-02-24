@@ -40,7 +40,6 @@ export default async function getData(axios, ticker) {
     };
     let response = await pull;
     let table = await response.data['Time Series (Daily)'];
-    console.log(response)
     for (let date in table) {
         
         let open = parseFloat(table[date]['1. open']);
